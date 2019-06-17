@@ -3,19 +3,21 @@ xs por parametro e com ele, deve ser montado uma lista nÌƒao ordenada (ul) na pÌ
 ul criada deve ser filha da div citada.*/
 
 function montagem(xs){
-    xs = "ola mundo";
+    xs = "ola mundo com javascript";
     
     var div = document.querySelector("#d1")
     var ul = document.createElement("ul");
-   
+    for(var i=0; i<=xs.length; i++){
         var li = document.createElement("li");
-        li.innerHTML = xs.split("");
+        li.innerHTML = xs
+    }
+        
         ul.appendChild(li);
         div.appendChild(ul);
         
         
    
-    return xs;
+    
     
 }
  
