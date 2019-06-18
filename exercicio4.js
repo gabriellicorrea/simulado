@@ -9,7 +9,7 @@ function multiplos(numeros){
  numeros = [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18];
 
 //criei uma variavel usando .filter para filtrar os numeros do vetor que sao multiplos de 3
-//depois peguei essa variavel e coloquei no .reduce somando com o acumulador.
+//depois peguei essa variavel e coloquei no .reduce somando com o acumulador e o valor do momento.
 
  var tres = numeros.filter(number => number % 3 == 0) //usei o filter para filtrar os multiplos de 3
 var somatres = tres.reduce((acc,cur)=> acc + cur) // usei reduce para somar os multiplos

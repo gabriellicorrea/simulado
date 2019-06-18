@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <script>
+          function nomearImgs(){
+              var img = document.querySelectorAll("img")
+              for(var i=0; i<=img.length; i++){
+                  var aux = img[i];
+              }
+              return ("image"+ [i]+"png");
+          }
+          //jeito correto
+    
+        function nomearImgs(){
+            var img = document.querySelectorAll("img")
+            for(var i=0; i<img.length; i++){
+                img.src = "image" + i + ".png"
+            }
+        }
+    
+    function sumir(){
+        var p = document.querySelectorAll("p");
+        for(var i=0; i<p.length; i++){
+            //p[i].style.display = "none";
+            //outro jeito
+            //ps[i].parentNode.removeChild(ps[i]);
+        }
+    }
+    
+    
+    
+    
+          
+        </script>
+    </head>
+    <body>
+        
+        <p>Oi</p>
+        <p>Oi</p>    
+            <p>Oi</p>    <p>Oi</p>    <p>Oi</p>    <p>Oi</p>    <p>Oi</p>
+        <button onclick="sumir()">Teste</button>
+        
+    </body>
+</html>
