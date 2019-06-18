@@ -4,15 +4,25 @@ Fa¸ca uma fun¸c˜ao que some os mu´ltiplos de 3 de um vetor passado via
 parˆametro, usando map/ﬁlter/reduce.
 
 */
-const numeros = [2,3,4,5,6,7,8,9,10,11];
+
 function multiplos(){
 const numeros = [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18];
- var tres = numeros.filter(function (x){
-     return x % 3 == 0
-     
+ var tres = numeros.filter(function (prevVal,x){
+     return x % 3 == 0 + x
+   
  });
-
+  alert(tres)
     document.write(tres);
+}
+function multiplos7(){
+    const numeros = [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18];
+
+var sete = numeros.filter(function(x){
+    return x % 7 == 0
+    
+}); 
+    document.write(sete);
+    
 }
 
 
