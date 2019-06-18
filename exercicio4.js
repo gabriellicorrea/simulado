@@ -7,26 +7,33 @@ parˆametro, usando map/ﬁlter/reduce.
 
 function multiplos(){
 const numeros = [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18];
- var tres = numeros.filter(function (prevVal,x){
-     return x % 3 == 0 + x
-   
- });
-  alert(tres)
+
+//criei uma variavel usando .filter para filtrar os numeros do vetor que sao multiplos de 3
+//depois peguei essa variavel e coloquei no .reduce somando com o acumulador.
+
+ var tres = numeros.filter(number => number % 3 == 0) //usei o filter para filtrar os multiplos de 3
+var somatres = tres.reduce((acc,cur)=> acc + cur) // usei reduce para somar os multiplos
+     
+     
+
+   document.write(somatres)
     document.write(tres);
 }
-function multiplos7(){
-    const numeros = [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18];
 
-var sete = numeros.filter(function(x){
-    return x % 7 == 0
+
+
+
+function multiplos7(){
+const numeros = [2,3,4,5,6,7,8,9,10,11,12,13,14];
+
+var sete = numeros.filter(number => number % 7 == 0) //usei filter para filtrar os  multiplos de 7
+var multiplica7 = sete.reduce((acc,cur)=> acc * cur) //usei reduce para multiplicar os multiplos
+ 
     
-}); 
+    document.write(multiplica7)
     document.write(sete);
     
 }
-
-
-
 
 
 
