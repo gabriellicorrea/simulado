@@ -5,8 +5,8 @@ parˆametro, usando map/ﬁlter/reduce.
 
 */
 
-function multiplos(){
-const numeros = [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18];
+function multiplos(numeros){
+ numeros = [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18];
 
 //criei uma variavel usando .filter para filtrar os numeros do vetor que sao multiplos de 3
 //depois peguei essa variavel e coloquei no .reduce somando com o acumulador.
@@ -23,8 +23,8 @@ var somatres = tres.reduce((acc,cur)=> acc + cur) // usei reduce para somar os m
 
 
 
-function multiplos7(){
-const numeros = [2,3,4,5,6,7,8,9,10,11,12,13,14];
+function multiplos7(numeros){
+ numeros = [2,3,4,5,6,7,8,9,10,11,12,13,14];
 
 var sete = numeros.filter(number => number % 7 == 0) //usei filter para filtrar os  multiplos de 7
 var multiplica7 = sete.reduce((acc,cur)=> acc * cur) //usei reduce para multiplicar os multiplos
