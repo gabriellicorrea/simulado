@@ -1,7 +1,5 @@
-/*Fa¸ca uma fun¸c˜ao que retorne a quantidade de caract´eres num´ericos somado
-a quantidade de vogais de uma string recebida via parˆametro usando 
-map/ﬁlter/reduce.
 
+/*exercicio7
 Fa¸ca uma fun¸c˜ao que some os mu´ltiplos de 3 de um vetor passado via 
 parˆametro, usando map/ﬁlter/reduce.
 
